@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   PHONE_1,
   PHONE_2,
@@ -17,18 +18,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {/* Brand */}
           <div>
-            <p
-              className="text-gold font-bold text-2xl mb-1"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              Periša
-            </p>
-            <p className="text-gray-500 text-xs uppercase tracking-widest mb-4">
-              Schuh &amp; Schlüsseldienst
-            </p>
+            <a href="#" className="inline-block mb-4">
+              <Image
+                src="/logo.png"
+                alt="Periša Schuh & Schlüsseldienst"
+                width={140}
+                height={56}
+                className="h-24 w-auto object-contain"
+              />
+            </a>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Traditionelles Handwerk mit persönlichem Service. Qualität und
-              Zuverlässigkeit seit Generationen – direkt in Singen.
+              Traditionelles Handwerk mit persönlichem Service. Qualität und Zuverlässigkeit seit
+              Generationen – direkt in Singen.
             </p>
           </div>
 

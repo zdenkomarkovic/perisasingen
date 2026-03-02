@@ -165,8 +165,8 @@ export default function Gallery() {
           >
             <div className="relative w-full h-[80vh]">
               <Image
-                src={images[activeIndex].src}
-                alt={images[activeIndex].alt}
+                src={images[activeIndex]?.src ?? ""}
+                alt={images[activeIndex]?.alt ?? ""}
                 fill
                 className="object-contain"
                 sizes="90vw"
@@ -174,7 +174,7 @@ export default function Gallery() {
               />
             </div>
             <p className="text-center text-white/60 text-sm mt-3">
-              {images[activeIndex].alt}
+              {images[activeIndex]?.alt}
             </p>
           </div>
 

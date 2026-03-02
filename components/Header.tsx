@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { PHONE_1, PHONE_1_HREF } from "@/lib/constants";
 
 const navLinks = [
@@ -15,18 +16,17 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark text-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-tight">
-          <span
-            className="text-gold font-bold text-xl tracking-wide"
-            style={{ fontFamily: "var(--font-playfair)" }}
-          >
-            Periša
-          </span>
-          <span className="text-gray-400 text-xs uppercase tracking-widest">
-            Schuh &amp; Schlüsseldienst
-          </span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Periša Schuh & Schlüsseldienst"
+            width={140}
+            height={56}
+            className="h-16 w-auto object-contain"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}
@@ -61,12 +61,7 @@ export default function Header() {
           className="md:hidden p-2 text-gray-300 hover:text-gold transition-colors"
           aria-label="Menü öffnen"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open ? (
               <path
                 strokeLinecap="round"
