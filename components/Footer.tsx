@@ -21,7 +21,7 @@ export default function Footer() {
             <a href="#" className="inline-block mb-4">
               <Image
                 src="/logo.png"
-                alt="Periša Schuh & Schlüsseldienst"
+                alt="POSTARKADE Schuh & Schlüsseldienst"
                 width={140}
                 height={56}
                 className="h-24 w-auto object-contain"
@@ -88,13 +88,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-gray-600 text-xs">
-            &copy; {currentYear} Schuh- und Schlüsseldienst Periša Singen. Alle Rechte vorbehalten.
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-gray-400 text-xs">
+            &copy; {currentYear} POSTARKADE Schuh- und Schlüsseldienst Singen. Alle Rechte vorbehalten.
           </p>
-          <p className="text-gray-700 text-xs">
-            {ADDRESS_STREET}, {ADDRESS_CITY}
-          </p>
+          <a
+            href="https://manikamwebsolutions.com/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white text-xs transition-colors"
+          >
+            Webdesign: Manikam Web Solutions
+          </a>
         </div>
       </div>
     </footer>

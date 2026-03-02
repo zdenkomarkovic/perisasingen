@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PHONE_1_HREF, PHONE_1 } from "@/lib/constants";
+import { PHONE_1_HREF, PHONE_1, PHONE_2, PHONE_2_HREF } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -42,7 +42,7 @@ export default function Hero() {
           className="text-4xl md:text-5xl font-semibold text-white/90 mb-6"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Periša
+          POSTARKADE
         </p>
 
         <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -66,12 +66,31 @@ export default function Hero() {
           >
             {PHONE_1} anrufen
           </a>
+          <a
+            href={PHONE_2_HREF}
+            className="border-2 border-white/70 hover:border-gold hover:text-gold text-white font-bold px-8 py-4 rounded transition-colors duration-200 text-sm tracking-wide uppercase w-full sm:w-auto"
+          >
+            {PHONE_2} anrufen
+          </a>
         </div>
 
-        {/* 24/7 note */}
-        <p className="mt-6 text-gold/80 text-xs tracking-widest uppercase font-semibold">
-          24/7 Notdienst &bull; Schlüsseldienst &amp; Türöffnung
-        </p>
+        {/* Highlighted services */}
+        <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <div className="flex items-center gap-2 bg-gold/20 border border-gold/50 backdrop-blur-sm rounded-full px-5 py-2.5">
+            <svg className="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-white font-semibold text-sm">Uhrservice &amp; Batteriewechsel</span>
+            <span className="bg-gold text-dark text-xs font-bold px-2 py-0.5 rounded-full">Garantie</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/10 border border-white/30 backdrop-blur-sm rounded-full px-5 py-2.5">
+            <svg className="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+            </svg>
+            <span className="text-white font-semibold text-sm">Türöffnung</span>
+            <span className="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">NOTDIENST 24/7</span>
+          </div>
+        </div>
       </div>
 
       {/* Scroll arrow */}

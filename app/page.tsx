@@ -1,6 +1,7 @@
 import { buildMetadata } from "@/lib/metadata";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Highlights from "@/components/Highlights";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Gallery from "@/components/Gallery";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <Highlights />
         <Services />
         <About />
         <Gallery />

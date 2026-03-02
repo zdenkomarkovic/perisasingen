@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { PHONE_1, PHONE_1_HREF } from "@/lib/constants";
+import { PHONE_1, PHONE_1_HREF, PHONE_2, PHONE_2_HREF } from "@/lib/constants";
 
 const navLinks = [
   { label: "Leistungen", href: "#leistungen" },
@@ -52,6 +52,12 @@ export default function Header() {
             className="text-white font-semibold text-sm hover:text-gold transition-colors"
           >
             {PHONE_1}
+          </a>
+          <a
+            href={PHONE_2_HREF}
+            className="text-gray-400 text-xs hover:text-gold transition-colors"
+          >
+            {PHONE_2}
           </a>
         </div>
 
@@ -105,6 +111,12 @@ export default function Header() {
               className="text-white font-bold text-lg hover:text-gold transition-colors"
             >
               {PHONE_1}
+            </a>
+            <a
+              href={PHONE_2_HREF}
+              className="text-gray-400 text-base hover:text-gold transition-colors"
+            >
+              {PHONE_2}
             </a>
           </div>
         </div>
