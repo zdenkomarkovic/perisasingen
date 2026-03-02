@@ -1,0 +1,101 @@
+import {
+  PHONE_1,
+  PHONE_2,
+  PHONE_1_HREF,
+  PHONE_2_HREF,
+  ADDRESS_STREET,
+  ADDRESS_CITY,
+  ADDRESS_ADDITION,
+} from "@/lib/constants";
+
+const currentYear = new Date().getFullYear();
+
+export default function Footer() {
+  return (
+    <footer className="bg-dark border-t border-white/5 py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+          {/* Brand */}
+          <div>
+            <p
+              className="text-gold font-bold text-2xl mb-1"
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              Periša
+            </p>
+            <p className="text-gray-500 text-xs uppercase tracking-widest mb-4">
+              Schuh &amp; Schlüsseldienst
+            </p>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Traditionelles Handwerk mit persönlichem Service. Qualität und
+              Zuverlässigkeit seit Generationen – direkt in Singen.
+            </p>
+          </div>
+
+          {/* Quick links */}
+          <div>
+            <p className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              Navigation
+            </p>
+            <ul className="space-y-2">
+              {[
+                ["Unsere Leistungen", "#leistungen"],
+                ["Galerie", "#galerie"],
+                ["Über uns", "#uber-uns"],
+                ["Kontakt", "#kontakt"],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    className="text-gray-400 hover:text-gold text-sm transition-colors"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact info */}
+          <div>
+            <p className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              Kontakt
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href={PHONE_1_HREF} className="hover:text-gold transition-colors">
+                  {PHONE_1}
+                </a>
+              </li>
+              <li>
+                <a href={PHONE_2_HREF} className="hover:text-gold transition-colors">
+                  {PHONE_2}
+                </a>
+              </li>
+              <li className="pt-1">
+                <span className="block">{ADDRESS_ADDITION}</span>
+                <span className="block">{ADDRESS_STREET}</span>
+                <span className="block">{ADDRESS_CITY}</span>
+              </li>
+              <li className="pt-2">
+                <span className="inline-block bg-gold/20 text-gold text-xs font-semibold px-2 py-0.5 rounded">
+                  NOTDIENST 24/7
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p className="text-gray-600 text-xs">
+            &copy; {currentYear} Schuh- und Schlüsseldienst Periša Singen. Alle Rechte vorbehalten.
+          </p>
+          <p className="text-gray-700 text-xs">
+            {ADDRESS_STREET}, {ADDRESS_CITY}
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
