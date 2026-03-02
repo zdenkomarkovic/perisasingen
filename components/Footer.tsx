@@ -78,6 +78,17 @@ export default function Footer() {
                 <span className="block">{ADDRESS_STREET}</span>
                 <span className="block">{ADDRESS_CITY}</span>
               </li>
+              <li className="pt-2 space-y-1">
+                <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Öffnungszeiten</p>
+                <div className="flex justify-between">
+                  <span>Mo – Fr</span>
+                  <span className="text-gray-300">10:00 – 18:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Samstag</span>
+                  <span className="text-gray-300">10:00 – 16:00</span>
+                </div>
+              </li>
               <li className="pt-2">
                 <span className="inline-block bg-gold/20 text-gold text-xs font-semibold px-2 py-0.5 rounded">
                   NOTDIENST 24/7

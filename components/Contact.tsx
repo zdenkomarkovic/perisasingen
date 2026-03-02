@@ -93,6 +93,38 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Opening hours */}
+            <div className="bg-dark/40 border border-white/10 rounded-xl p-6 flex items-start gap-4">
+              <div className="w-12 h-12 bg-gold/15 rounded-full flex items-center justify-center shrink-0">
+                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">
+                  Öffnungszeiten
+                </p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-300 text-sm">Montag – Freitag</span>
+                    <span className="text-white font-semibold text-sm">10:00 – 18:00 Uhr</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-300 text-sm">Samstag</span>
+                    <span className="text-white font-semibold text-sm">10:00 – 16:00 Uhr</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-300 text-sm">Sonntag</span>
+                    <span className="text-gray-500 text-sm">Geschlossen</span>
+                  </div>
+                  <div className="mt-3 pt-3 border-t border-white/10 flex items-center gap-2">
+                    <span className="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded animate-pulse">24/7</span>
+                    <span className="text-gray-400 text-xs">Notdienst außerhalb der Öffnungszeiten</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Services quick list */}
             <div className="bg-dark/40 border border-white/10 rounded-xl p-6">
               <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-4">
