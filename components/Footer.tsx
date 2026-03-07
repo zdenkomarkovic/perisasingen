@@ -79,7 +79,9 @@ export default function Footer() {
                 <span className="block">{ADDRESS_CITY}</span>
               </li>
               <li className="pt-2 space-y-1">
-                <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Öffnungszeiten</p>
+                <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">
+                  Öffnungszeiten
+                </p>
                 <div className="flex justify-between">
                   <span>Mo – Fr</span>
                   <span className="text-gray-300">10:00 – 18:00</span>
@@ -101,10 +103,11 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-gray-400 text-xs">
-            &copy; {currentYear} POSTARKADE Schuh- und Schlüsseldienst Singen. Alle Rechte vorbehalten.
+            &copy; {currentYear} POSTARKADE Schuh- und Schlüsseldienst Singen. Alle Rechte
+            vorbehalten.
           </p>
           <a
-            href="https://manikamwebsolutions.com/en"
+            href="https://manikamwebsolutions.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white text-xs transition-colors"
