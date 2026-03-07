@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.postarcade.de";
 
 export const SITE_NAME = "Schuh- und Schlüsseldienst Periša Singen";
 
