@@ -1,7 +1,7 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.postarcade.de";
 
-export const SITE_NAME = "Schuh- und Schlüsseldienst Periša Singen";
+export const SITE_NAME = "Schuh- und Schlüsseldienst Postarkade Singen";
 
 export const SITE_DESCRIPTION =
   "Ihr zuverlässiger Schuh- und Schlüsseldienst in Singen. Schuhreparaturen, Schlüssel nachmachen, Batteriewechsel mit Garantie, Gravuren und Pokale – direkt in der Postarkade, Bahnhofstraße 15.";

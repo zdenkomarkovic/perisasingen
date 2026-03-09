@@ -83,7 +83,7 @@ export default function About() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%281%29.jpeg"
-                alt="Schuh- und Schlüsseldienst Periša – Werkstatt"
+                alt="Schuh- und Schlüsseldienst Postarkade – Werkstatt"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -53,11 +53,14 @@ export const metadata: Metadata = {
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["Locksmith", "LocalBusiness"],
   name: SITE_NAME,
   description: SITE_DESCRIPTION,
   url: SITE_URL,
   telephone: PHONE_1_HREF,
+  priceRange: "€",
+  currenciesAccepted: "EUR",
+  paymentAccepted: "Cash, EC-Karte",
   address: {
     "@type": "PostalAddress",
     streetAddress: `${ADDRESS_ADDITION}, ${ADDRESS_STREET}`,
@@ -69,6 +72,10 @@ const localBusinessJsonLd = {
     "@type": "GeoCoordinates",
     latitude: 47.7599,
     longitude: 8.8397,
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Singen (Hohentwiel)",
   },
   openingHoursSpecification: [
     {
@@ -84,6 +91,17 @@ const localBusinessJsonLd = {
       closes: "16:00",
     },
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Schlüsseldienst & Schuhservice Leistungen",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Schlüssel nachmachen Singen" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Türöffnung Singen – Notdienst 24/7" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Auto-Schlüssel Service Singen" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Schuhreparatur Singen" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Batteriewechsel Uhren Singen" } },
+    ],
+  },
   image: `${SITE_URL}/hero.webp`,
 };
 

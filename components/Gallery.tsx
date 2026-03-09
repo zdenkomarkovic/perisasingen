@@ -6,11 +6,11 @@ import Image from "next/image";
 const images = [
   {
     src: "/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%282%29.jpeg",
-    alt: "Werkstatt Periša Singen",
+    alt: "Werkstatt Postarkade Singen",
   },
   {
     src: "/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%283%29.jpeg",
-    alt: "Schuhreparatur Periša",
+    alt: "Schuhreparatur Postarkade",
   },
   {
     src: "/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%284%29.jpeg",
@@ -18,7 +18,7 @@ const images = [
   },
   {
     src: "/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%285%29.jpeg",
-    alt: "Lederarbeiten Periša",
+    alt: "Lederarbeiten Postarkade",
   },
   {
     src: "/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%286%29.jpeg",
@@ -38,7 +38,7 @@ const images = [
   },
   {
     src: "/WhatsApp%20Image%202026-02-27%20at%2010.12.11%20%2810%29.jpeg",
-    alt: "Periša Postarkade Singen",
+    alt: "Postarkade Postarkade Singen",
   },
 ];
 

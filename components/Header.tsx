@@ -21,7 +21,7 @@ export default function Header() {
         <a href="#" className="flex items-center">
           <Image
             src="/logo.png"
-            alt="Periša Schuh & Schlüsseldienst"
+            alt="Postarkade Schuh & Schlüsseldienst"
             width={140}
             height={56}
             className="h-16 w-auto object-contain"

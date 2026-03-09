@@ -160,7 +160,7 @@ export default function Contact() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Standort Periša Singen"
+              title="Standort Postarkade Singen"
             />
           </div>
         </div>
