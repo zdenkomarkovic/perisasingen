@@ -4,7 +4,7 @@ export const SITE_URL =
 export const SITE_NAME = "Schuh- und Schlüsseldienst Postarkade Singen";
 
 export const SITE_DESCRIPTION =
-  "Ihr zuverlässiger Schuh- und Schlüsseldienst in Singen. Schuhreparaturen, Schlüssel nachmachen, Batteriewechsel mit Garantie, Gravuren und Pokale – direkt in der Postarkade, Bahnhofstraße 15.";
+  "Schlüsseldienst & Batteriewechsel Singen – Schlüssel nachmachen, Türöffnung 24/7, Uhren-Batterie wechseln mit Garantie. Schuhreparaturen, Gravuren und Pokale – direkt in der Postarkade, Bahnhofstraße 15.";
 
 export const PHONE_1 = "0176 / 41451414";
 export const PHONE_2 = "+49 176 45171218";

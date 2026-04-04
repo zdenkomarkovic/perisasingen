@@ -2,39 +2,29 @@ import { PHONE_1, PHONE_1_HREF } from "@/lib/constants";
 
 const faqs = [
   {
-    question: "Gibt es einen Schlüsseldienst Notdienst in Singen?",
+    question: "Wo kann ich in Singen eine Uhr-Batterie wechseln lassen?",
     answer:
-      "Ja – Schlüsseldienst Postarkade in Singen ist 24 Stunden am Tag, 7 Tage die Woche erreichbar. Bei Aussperrung oder verlorenen Schlüsseln helfen wir schnell und unkompliziert. Einfach anrufen.",
+      "Bei Schuh- und Schlüsseldienst Postarkade in der Postarkade, Bahnhofstraße 15, Singen. Wir wechseln Batterien für Armbanduhren aller Marken – schnell und mit 1 Jahr Garantie.",
   },
   {
-    question: "Wo kann ich in Singen einen Schlüssel nachmachen lassen?",
+    question: "Welche Batterien werden bei Postarkade Singen gewechselt?",
     answer:
-      "Bei Schlüsseldienst Postarkade in der Postarkade, Bahnhofstraße 15, Singen. Wir fertigen Schlüsselkopien für alle gängigen Schließsysteme – schnell und mit 1 Jahr Garantie.",
+      "Wir wechseln Batterien für Armbanduhren, Taschenuhren, Fernbedienungen, Auto-Schlüssel und andere Kleingeräte. Einfach vorbeikommen – der Wechsel dauert in der Regel nur wenige Minuten.",
   },
   {
-    question: "Macht Postarkade auch Auto-Schlüssel in Singen?",
+    question: "Wie viel kostet ein Batteriewechsel in Singen?",
     answer:
-      "Ja, wir bieten Auto-Schlüssel Service in Singen an – inklusive Batteriewechsel für Autoschlüssel-Fernbedienungen mit 1 Jahr Garantie.",
+      "Die Kosten für einen Batteriewechsel sind bei uns fair und transparent. Rufen Sie uns an oder kommen Sie direkt vorbei – wir informieren Sie gerne vor Ort. Alle gewechselten Batterien erhalten 1 Jahr Garantie.",
   },
   {
-    question: "Was kostet eine Türöffnung in Singen?",
+    question: "Bietet Postarkade Singen auch Batteriewechsel für Auto-Schlüssel an?",
     answer:
-      "Die Kosten für eine Türöffnung hängen von der Situation ab. Rufen Sie uns einfach an – wir beraten Sie ehrlich und kommen schnell zu Ihnen.",
+      "Ja, wir wechseln Batterien für Auto-Schlüssel und Fernbedienungen aller gängigen Fahrzeugmarken – inklusive 1 Jahr Garantie. Einfach in der Postarkade, Bahnhofstraße 15, vorbeikommen.",
   },
   {
-    question: "Wo befindet sich der Schlüsseldienst Postarkade in Singen?",
+    question: "Wie lange dauert ein Batteriewechsel bei Postarkade Singen?",
     answer:
-      "Wir befinden uns direkt in der Postarkade, Bahnhofstraße 15, 78224 Singen – zentral und gut erreichbar.",
-  },
-  {
-    question: "Wie lange dauert es, einen Schlüssel nachmachen zu lassen?",
-    answer:
-      "Das Nachmachen eines Schlüssels dauert bei uns in der Regel nur wenige Minuten. Kein Termin nötig – einfach mit dem Original-Schlüssel in die Postarkade, Bahnhofstraße 15, Singen kommen.",
-  },
-  {
-    question: "Welche Schlüsseltypen können bei Postarkade Singen kopiert werden?",
-    answer:
-      "Wir fertigen Kopien für Hausschlüssel, Büroschlüssel, Briefkastenschlüssel, Tresorschlüssel und viele weitere gängige Schließsysteme – alle mit 1 Jahr Garantie.",
+      "Ein Batteriewechsel dauert bei uns meist nur wenige Minuten. Kein Termin nötig – einfach während der Öffnungszeiten vorbeikommen.",
   },
 ];
 
@@ -51,7 +41,7 @@ const faqJsonLd = {
   })),
 };
 
-export default function SchluesseldienstInfo() {
+export default function BatteriewechselInfo() {
   return (
     <>
       <script
@@ -59,32 +49,32 @@ export default function SchluesseldienstInfo() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <section id="schluesseldienst-singen" className="bg-white py-20 px-4">
+      <section id="batteriewechsel-singen" className="bg-cream py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
 
             {/* Left – keyword text */}
             <div>
               <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">
-                Schlüsseldienst Singen
+                Batteriewechsel Singen
               </p>
               <h2
                 className="text-3xl md:text-4xl font-bold text-dark mb-5 leading-tight"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Ihr vertrauensvoller{" "}
-                <span className="text-gold">Schlüsseldienst in Singen</span>
+                Batteriewechsel in Singen –{" "}
+                <span className="text-gold">schnell & mit Garantie</span>
               </h2>
               <div className="w-14 h-0.5 bg-gold mb-6" />
 
               <p className="text-muted text-base leading-relaxed mb-4">
-                Als langjähriger <strong className="text-dark">Schlüsseldienst in Singen</strong> bieten wir Ihnen alles rund um Schlüssel und Sicherheit. Ob Sie einen <strong className="text-dark">Schlüssel nachmachen</strong> lassen möchten, Hilfe bei einer <strong className="text-dark">Türöffnung in Singen</strong> benötigen oder einen neuen Auto-Schlüssel brauchen – wir sind Ihr zuverlässiger Ansprechpartner.
+                Sie suchen einen zuverlässigen <strong className="text-dark">Batteriewechsel in Singen</strong>? Bei Schuh- und Schlüsseldienst Postarkade wechseln wir Batterien für <strong className="text-dark">Armbanduhren</strong>, Taschenuhren, <strong className="text-dark">Fernbedienungen</strong> und <strong className="text-dark">Auto-Schlüssel</strong> – schnell, professionell und zu fairen Preisen.
               </p>
               <p className="text-muted text-base leading-relaxed mb-4">
-                Unser <strong className="text-dark">Schlüsseldienst Notdienst in Singen</strong> ist rund um die Uhr erreichbar – 24 Stunden, 7 Tage die Woche. Wir helfen schnell und ohne versteckte Kosten, damit Sie so bald wie möglich wieder Zugang zu Ihrer Wohnung oder Ihrem Fahrzeug haben.
+                Unser <strong className="text-dark">Uhrservice in Singen</strong> ist auf Batterienwechsel spezialisiert. Egal ob klassische Armbanduhr, Sportuhr oder Smartwatch-Batterie – wir helfen Ihnen unkompliziert und ohne Wartezeit. Kein Termin nötig, einfach vorbeikommen.
               </p>
               <p className="text-muted text-base leading-relaxed mb-8">
-                Alle von uns gefertigten Schlüssel und Batterien werden mit <strong className="text-dark">1 Jahr Garantie</strong> geliefert. Finden Sie uns direkt in der <strong className="text-dark">Postarkade, Bahnhofstraße 15 in Singen</strong>.
+                Alle gewechselten Batterien erhalten bei uns <strong className="text-dark">1 Jahr Garantie</strong>. Finden Sie uns direkt in der <strong className="text-dark">Postarkade, Bahnhofstraße 15 in Singen</strong> – zentral und gut erreichbar.
               </p>
 
               <a
@@ -116,7 +106,7 @@ export default function SchluesseldienstInfo() {
                     key={faq.question}
                     className="group border border-warm rounded-lg overflow-hidden"
                   >
-                    <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer list-none bg-cream hover:bg-warm transition-colors duration-200">
+                    <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer list-none bg-white hover:bg-warm transition-colors duration-200">
                       <span className="font-semibold text-dark text-sm">{faq.question}</span>
                       <svg
                         className="w-4 h-4 text-gold shrink-0 transition-transform duration-200 group-open:rotate-180"
@@ -127,7 +117,7 @@ export default function SchluesseldienstInfo() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </summary>
-                    <div className="px-5 py-4 bg-white text-muted text-sm leading-relaxed">
+                    <div className="px-5 py-4 bg-cream text-muted text-sm leading-relaxed">
                       {faq.answer}
                     </div>
                   </details>

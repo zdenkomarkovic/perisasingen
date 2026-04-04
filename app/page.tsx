@@ -4,15 +4,16 @@ import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
 import Services from "@/components/Services";
 import SchluesseldienstInfo from "@/components/SchluesseldienstInfo";
+import BatteriewechselInfo from "@/components/BatteriewechselInfo";
 import About from "@/components/About";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const metadata = buildMetadata({
-  title: "Schlüsseldienst Singen – Schlüssel nachmachen & Türöffnung | Postarkade",
+  title: "Schlüsseldienst & Batteriewechsel Singen – Schlüssel nachmachen | Postarkade",
   description:
-    "Schlüsseldienst Singen: Schlüssel nachmachen, Türöffnung & 24/7 Notdienst. Schuhreparaturen, Batteriewechsel mit Garantie, Gravuren und Stempel – Postarkade, Bahnhofstraße 15.",
+    "Schlüsseldienst Singen: Schlüssel nachmachen, Türöffnung & 24/7 Notdienst. Batteriewechsel Singen für Uhren, Fernbedienungen & Auto-Schlüssel mit Garantie. Schuhreparaturen, Gravuren – Postarkade, Bahnhofstraße 15.",
 });
 
 export default function HomePage() {
@@ -24,6 +25,7 @@ export default function HomePage() {
         <Highlights />
         <Services />
         <SchluesseldienstInfo />
+        <BatteriewechselInfo />
         <About />
         <Gallery />
         <Contact />

@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/15" />
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-7xl mx-auto">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 border border-gold/50 text-gold text-xs font-semibold px-4 py-1.5 rounded-full mb-4 md:mb-8 tracking-widest uppercase backdrop-blur-sm">
           <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
@@ -33,10 +33,12 @@ export default function Hero() {
 
         {/* Heading */}
         <h1
-          className="text-3xl sm:text-5xl md:text-7xl font-bold mb-2 md:mb-3 leading-tight"
+          className="text-2xl sm:text-4xl md:text-6xl font-bold mb-2 md:mb-3 leading-tight"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Schuh- &amp; <span className="text-gold">Schlüsseldienst</span> in Singen
+          Schuh- &amp; <span className="text-gold">Schlüsseldienst</span> Singen
+          <br />
+          Schlüssel nachmachen &amp; Batteriewechsel
         </h1>
         <p
           className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white/90 mb-4 md:mb-6"
@@ -45,10 +47,12 @@ export default function Hero() {
           POSTARKADE
         </p>
 
-        <p className="text-sm md:text-lg text-gray-300 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed">
+        <p className="text-xs md:text-lg text-gray-300 max-w-5xl mx-auto mb-6 md:mb-10 leading-relaxed">
           Traditionelles Handwerk mit persönlichem Service –{" "}
           <span className="text-white">Qualität, die man spürt.</span>
-          <br className="hidden md:block" /> Schuhreparaturen, Schlüssel, Gravuren und mehr – alles
+          <br className="hidden md:block" /> Schuhreparaturen,{" "}
+          <span className="text-white">Schlüssel nachmachen</span>,{" "}
+          <span className="text-white">Batteriewechsel in Singen</span>, Gravuren und mehr – alles
           unter einem Dach.
         </p>
 
@@ -77,18 +81,44 @@ export default function Hero() {
         {/* Highlighted services */}
         <div className="mt-4 md:mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center">
           <div className="flex items-center gap-1.5 bg-gold/20 border border-gold/50 backdrop-blur-sm rounded-full px-3 py-1.5 md:px-5 md:py-2.5">
-            <svg className="w-3 h-3 md:w-4 md:h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <svg
+              className="w-3 h-3 md:w-4 md:h-4 text-gold shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
             </svg>
-            <span className="text-white font-semibold text-xs md:text-sm">Uhrservice &amp; Batteriewechsel</span>
-            <span className="bg-gold text-dark text-xs font-bold px-1.5 py-0.5 rounded-full">Garantie</span>
+            <span className="text-white font-semibold text-xs md:text-sm">
+              Uhrservice &amp; Batteriewechsel
+            </span>
+            <span className="bg-gold text-dark text-xs font-bold px-1.5 py-0.5 rounded-full">
+              Garantie
+            </span>
           </div>
           <div className="flex items-center gap-1.5 bg-white/10 border border-white/30 backdrop-blur-sm rounded-full px-3 py-1.5 md:px-5 md:py-2.5">
-            <svg className="w-3 h-3 md:w-4 md:h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+            <svg
+              className="w-3 h-3 md:w-4 md:h-4 text-gold shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+              />
             </svg>
             <span className="text-white font-semibold text-xs md:text-sm">Türöffnung</span>
-            <span className="bg-red-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-full animate-pulse">NOTDIENST 24/7</span>
+            <span className="bg-red-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-full animate-pulse">
+              NOTDIENST 24/7
+            </span>
           </div>
         </div>
       </div>
