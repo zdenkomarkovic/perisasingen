@@ -52,8 +52,8 @@ export default function Hero() {
           <span className="text-white">Qualität, die man spürt.</span>
           <br className="hidden md:block" /> Schuhreparaturen,{" "}
           <span className="text-white">Schlüssel nachmachen</span>,{" "}
-          <span className="text-white">Batteriewechsel in Singen</span>, Gravuren und mehr – alles
-          unter einem Dach.
+          <span className="text-white">Batteriewechsel in Singen</span>, Gravuren mehr – alles unter
+          einem Dach.
         </p>
 
         {/* CTAs */}
